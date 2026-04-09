@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ollama-server-20260409-142525
+    runtime: image
+    plan: free
+    image:
+      url: docker.io/ollama/ollama:latest
+    envVars:
+      - key: OLLAMA_HOST
+        value: 0.0.0.0
+    startCommand: ollama serve
