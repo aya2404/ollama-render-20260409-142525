@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: ollama-server-20260409-142525
+    name: ollama-server
     runtime: image
     plan: free
     image:
@@ -8,4 +8,3 @@ services:
     envVars:
       - key: OLLAMA_HOST
         value: 0.0.0.0
-    startCommand: ollama serve
